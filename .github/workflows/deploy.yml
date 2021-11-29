@@ -3,6 +3,9 @@ name: Deploy Site
 on:
   push:
     branches: [ main ]
+    paths:
+     - '**.ftd'
+  
   pull_request:
     branches: [ main ]
 
