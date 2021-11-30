@@ -311,7 +311,7 @@ optional string $youtube:
 optional string $instagram:
 width: fill
 background-color: #fff
-border-radius: 4
+border-radius: 6
 padding-vertical: 20
 border-color: #eaecee
 border-width: 1
@@ -348,6 +348,45 @@ width: 24
 height: auto
 link: $instagram
 
+
+
+
+-- component featured-post:
+component: ftd.row
+caption $title:
+string $date:
+string $image:
+padding-vertical: 30
+padding-horizontal: 24
+border-radius: 6
+border-color: #eaecee
+border-width: 1
+background-color: #fff
+spacing: 10
+
+--- ftd.column:
+width: percent 75
+spacing: 10
+
+
+--- ftd.text: $title
+size: 18
+line-height: 26
+style: bold
+
+--- ftd.text: $date
+size: 14
+color: #000c2d
+
+--- container: ftd.main
+
+--- ftd.column:
+width: percent 25
+
+--- ftd.image:
+src: $image
+width: fill
+height: auto
 
 
 

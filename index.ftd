@@ -140,3 +140,31 @@ youtube: /
 twitter: /
 facebook: /
 instagram: /
+
+-- ftd.column:
+width: fill
+spacing: 20
+
+-- ftd.text: FEATURED POSTS
+size: 14
+padding-bottom: 12
+width: fill
+border-color: #eaecee
+border-bottom: 1
+
+-- ftd.column:
+spacing: 20
+align: top
+width: fill
+
+-- lib.featured-post: How to start your first blog
+date: 04 Oct 2021
+image: https://res.cloudinary.com/dphj6havg/image/upload/v1611399697/sample.jpg
+
+-- lib.featured-post: How to start your first blog
+date: 04 Oct 2021
+image: https://res.cloudinary.com/dphj6havg/image/upload/v1611399697/sample.jpg
+
+-- lib.featured-post: How to start your first blog
+date: 04 Oct 2021
+image: https://res.cloudinary.com/dphj6havg/image/upload/v1611399697/sample.jpg
