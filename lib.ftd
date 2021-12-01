@@ -389,5 +389,113 @@ width: fill
 height: auto
 
 
+-- component footer:
+component: ftd.column
+caption $title:
+body $description:
+optional string $label: Navigation
+toc list $links:
+optional string $copyright:
+optional integer $padding-horizontal: 130
+optional integer $padding-vertical: 19
+background-color: #fff
+padding-horizontal: $padding-horizontal
+padding-vertical : $padding-vertical
+width: fill
+
+--- ftd.row:
+padding-vertical: 20
+border-color: #eaecee
+border-bottom: 1
+width: fill
+id: footer-links
+spacing: 50
+
+--- ftd.column:
+width: percent 30
+align: left
+
+--- ftd.text: $title
+padding-bottom: 10
+size: 16
+
+--- ftd.text:
+text:  $description
+padding-bottom: 20
+size: 14
+
+--- container: footer-links
+
+--- ftd.column:
+width: percent 70
+align: top-left
+spacing: 14
+
+--- ftd.text: Navigation
+padding-bottom: 10
+size: 16
+
+--- header-link:
+$loop$: $links as $obj
+toc: $obj
+
+--- container: ftd.main
+
+--- ftd.text:
+if: $copyright is not null
+text: $copyright
+size: 13
+padding-vertical: 20
+text-align: center
+width: fill
+
+
+-- component blog-card:
+component: ftd.column
+string $image:
+caption $title:
+string $sub-title:
+string $link:
+string $date:
+width: fill
+border-radius: 4
+border-color: #eaecee
+border-width: 1
+link: $link
+background-color: white
+overflow-x: hidden
+overflow-y: hidden
+
+
+--- ftd.image:
+src: $image
+width: fill
+
+--- ftd.column:
+padding-vertical: 30
+padding-horizontal: 20
+
+--- ftd.text: $title
+size: 32
+line-height: 44
+color: #000c2d
+
+--- ftd.text: $sub-title
+size: 16
+line-height: 24
+padding-vertical: 16
+border-color: #eaecee
+border-bottom: 1
+color: #000c2d
+
+--- ftd.text: $date
+size: 14
+padding-top: 16
+line-height: 24
+color: #000c2d
+
+
+
+
 
 

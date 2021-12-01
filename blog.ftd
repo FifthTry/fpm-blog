@@ -83,35 +83,48 @@ padding-horizontal: 130
 width: percent 70
 spacing: 20
 
--- lib.blog-card: Announcing FPM Launch
-image: https://res.cloudinary.com/dphj6havg/image/upload/v1638274747/Group_546_uvyd8z.jpg
-sub-title: Your web pages creating experience is about to get even better.
-date: 04 Oct 2021
-link: /
+-- ftd.image:
+src: https://res.cloudinary.com/dphj6havg/image/upload/v1638274747/Group_546_uvyd8z.jpg
+width: fill
+height: auto
 
--- lib.blog-card: Announcing FPM Launch
-image: https://res.cloudinary.com/dphj6havg/image/upload/v1638274747/Group_546_uvyd8z.jpg
-sub-title: Your web pages creating experience is about to get even better.
-date: 04 Oct 2021
-link: /
+-- lib.h0: Announcing FPM Launch
 
--- lib.blog-card: Announcing FPM Launch
-image: https://res.cloudinary.com/dphj6havg/image/upload/v1638274747/Group_546_uvyd8z.jpg
-sub-title: Your web pages creating experience is about to get even better.
-date: 04 Oct 2021
-link: /
+-- lib.sub-heading: Your web pages creating experience is about to get even better.
 
--- lib.blog-card: Announcing FPM Launch
-image: https://res.cloudinary.com/dphj6havg/image/upload/v1638274747/Group_546_uvyd8z.jpg
-sub-title: Your web pages creating experience is about to get even better.
-date: 04 Oct 2021
-link: /
+ftd is a language to create web pages or documents for publishing on the web. It starts
+with Markdown, but adds features to create full page layouts, lets you create reusable
+“ftd components”, and has first class support for data modelling, so the ftd document
+can be used as an data exchange format as well (as a replacement of JSON/CSV etc).
 
--- lib.blog-card: Announcing FPM Launch
-image: https://res.cloudinary.com/dphj6havg/image/upload/v1638274747/Group_546_uvyd8z.jpg
-sub-title: Your web pages creating experience is about to get even better.
-date: 04 Oct 2021
-link: /
+fpm is “ftd package manager”, defines a package format for packaging ftd files.
+fpm packages can depend on other fpm packages, and fpm can install all the
+dependencies of a package.
+
+fpm can also convert ftd files to static HTML files, so you can publish
+FTD files on github pages, S3 etc static site hosting sites.
+
+-- lib.h2: fpm-repo
+
+fpm packages can be shared with others by using .tar.gz format defined by fpm or
+via Git repository (any version control system for that matter). fpm is capable
+of downloading package dependencies for packages that are hosted on version
+control systems or tarballs served over HTTP.
+
+fpm has a sister project, fpm-repo (under development), which can be used
+for first class package hosting. You can chose if your fpm package would be
+natively hosted on say Github or via a fpm-repo you have created or available as SAAS.
+
+-- lib.h3: fpm future
+
+fpm packages can be shared with others by using .tar.gz format defined by fpm or
+via Git repository (any version control system for that matter). fpm is capable
+of downloading package dependencies for packages that are hosted on version
+control systems or tarballs served over HTTP.
+
+fpm has a sister project, fpm-repo (under development), which can be used
+for first class package hosting. You can chose if your fpm package would be
+natively hosted on say Github or via a fpm-repo you have created or available as SAAS.
 
 -- container: content
 
