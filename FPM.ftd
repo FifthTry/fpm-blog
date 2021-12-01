@@ -1,6 +1,6 @@
 -- import: fpm
 
 -- fpm.package:
-name: fpm_blog
+name: fpm-blog
 
 
