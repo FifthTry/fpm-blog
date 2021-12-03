@@ -1,4 +1,4 @@
--- import: lib
+-- import: fifthtry/blog-theme as lib
 
 -- lib.toc list toc:
 
