@@ -16,9 +16,10 @@
 -- string secondary-700: #4C555A
 -- string secondary-900: #384248
 -- string separator: #string
+
 -- record toc:
 caption title:
-string link:
+string url:
 
 
 -- ftd.text header-link:
@@ -26,7 +27,7 @@ toc toc:
 size: 14
 color: black
 text: $toc.title
-link:  $toc.link
+link:  $toc.url
 min-width: fit-content
 
 
@@ -63,7 +64,7 @@ toc: $obj
 
 
 -- ftd.row links-list:
-toc list toc:
+toc list links:
 integer padding-horizontal:
 integer padding-vertical:
 width: fill
@@ -79,7 +80,7 @@ padding-vertical: $padding-vertical
 
 
 --- header-link:
-$loop$: $toc as $obj
+$loop$: $links as $obj
 toc: $obj
 
 
