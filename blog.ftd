@@ -1,50 +1,28 @@
 -- import: lib
 
 -- lib.toc list toc:
+$processor$: toc
 
--- $toc: Lorem ipsum
-link: /
-
--- $toc: Lorem ipsum
-link: /
+- /
+  Lorem Ipsum 1
+- /
+  Lorem Ipsum 2
 
 -- lib.toc list toc-second:
 
--- $toc-second: Lorem ipsum
-link: /
+- /
+  Lorem 1
+- /
+  Lorem 2
+- /
+  Lorem 3
+- /
+  Lorem 4
+- /
+  Lorem 5
+- /
+  Lorem 6
 
--- $toc-second: Lorem ipsum
-link:/
-
--- $toc-second: Lorem ipsum
-link: /
-
--- $toc-second: Lorem ipsum
-link: /
-
--- $toc-second: Lorem ipsum
-link: /
-
--- $toc-second: Lorem ipsum
-link: /
-
--- $toc-second: Lorem ipsum
-link: /
-
--- $toc-second: Lorem ipsum
-link: /
-
--- $toc-second: Lorem ipsum
-link: /
-
--- $toc-second: Lorem ipsum
-link: /
-
--- $toc-second: Lorem ipsum
-link: /
-
--- $toc-second: Lorem ipsum
-link: /
 
 -- ftd.column:
 width: fill
@@ -66,7 +44,7 @@ padding-vertical: 19
 padding-horizontal: 130
 
 -- lib.links-list:
-toc: $toc-second
+links: $toc-second
 padding-vertical: 19
 padding-horizontal: 130
 
@@ -175,7 +153,7 @@ image: https://res.cloudinary.com/dphj6havg/image/upload/v1611399697/sample.jpg
 -- lib.footer: FPM BLOG - LATEST FPM NEWS & UPDATES
 padding-vertical: 19
 padding-horizontal: 130
-copyright: © 2021 FPM Blog - Latest FPM News & Updates - Published with Ghost & Krabi
+copyright: © 2021 FPM Blog - Latest FPM News & Updates - Published with FPM
 links: $toc
 
 fpm is “ftd package manager”, defines a package format for packaging ftd files.
