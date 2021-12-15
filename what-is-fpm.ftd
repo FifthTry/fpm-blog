@@ -1,4 +1,5 @@
 -- import: fifthtry/blog-theme as lib
+-- import: config
 
 -- lib.toc list toc:
 
@@ -14,38 +15,10 @@ link: /
 -- toc: Github
 link: /
 
--- ftd.column:
-width: fill
-id: main
 
+-- lib.blog-page:
 
--- container: main
-
-
--- ftd.column:
-width: fill
-
--- lib.header:
-logo: https://res.cloudinary.com/dphj6havg/image/upload/v1638644344/Group_551_gqhmnl.svg
-
-
--- container: main
-
--- ftd.column:
-width: fill
-spacing: 50
-id: content
-padding-vertical: 40
-padding-horizontal: 100
-
--- ftd.column:
-width: fill
-max-width: 700
-spacing: 20
-wrap: true
-position: center
-
--- lib.h1: What is FPM?
+--- lib.h1: What is FPM?
 
 ftd is a language to create web pages or documents for publishing on the web. It starts with Markdown,
 but adds features to create full page layouts, lets you create reusable “ftd components”,
@@ -59,7 +32,7 @@ fpm can also convert ftd files to static HTML files, so you can publish FTD file
 S3 etc static site hosting sites.
 
 
--- lib.h2: know about `fpm-repo`
+--- lib.h2: know about `fpm-repo`
 
 fpm packages can be shared with others by using .tar.gz format defined by fpm or via Git repository
 (any version control system for that matter). fpm is capable of downloading package dependencies for
@@ -77,9 +50,3 @@ ftd has some dynamic features, which an be used when using fpm-repo.
 fpm-repo also offers web based editing experience, with built in version control, change request based workflow
 (equivalent to Github Pull Request workflow).
 
-
--- container: main
-
--- lib.footer: FPM BLOG - LATEST FPM NEWS & UPDATES
-copyright: © 2021 FPM Blog - Latest FPM News & Updates
-logo: https://res.cloudinary.com/dphj6havg/image/upload/v1638860433/Group_552_uanei2.svg

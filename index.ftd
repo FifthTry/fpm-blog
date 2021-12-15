@@ -1,4 +1,5 @@
 -- import: fifthtry/blog-theme as lib
+-- import: config
 
 -- lib.toc list toc:
 
@@ -14,14 +15,13 @@ link: /
 -- toc: Github
 link: /
 
--- ftd.column:
-width: fill
-id: main
+
+-- lib.index-page:
 
 
--- lib.post list posts:
+-- lib.post-list-view:
 
--- posts: What is FPM?
+--- lib.post-summary: What is FPM?
 link: /what-is-fpm/
 author: sourabh
 published-date: 13th Dec, 2021
@@ -30,45 +30,12 @@ ftd is a language to create web pages or documents for publishing on the web.
 It starts with Markdown, but adds features to create full page layouts, lets
 you create reusable “ftd components”, and has first class support for data modelling...
 
--- posts: How to install FPM?
-link: /
+--- lib.post-summary: How to install FPM?
+link: /install-fpm/
 author: sourabh
 published-date: 13th Dec, 2021
 
 fpm is available as a crate, you can install it using:
 `cargo install fpm` ...
 
--- container: main
 
-
--- ftd.column:
-width: fill
-
--- lib.header:
-logo: https://res.cloudinary.com/dphj6havg/image/upload/v1638644344/Group_551_gqhmnl.svg
-
-
--- container: main
-
--- ftd.row:
-width: fill
-spacing: 50
-id: content
-padding-vertical: 40
-padding-horizontal: 100
-
--- ftd.row:
-width: fill
-spacing: 20
-wrap: true
-
-
--- lib.post-list:
-posts: $posts
-
-
--- container: main
-
--- lib.footer: FPM BLOG - LATEST FPM NEWS & UPDATES
-copyright: © 2021 FPM Blog - Latest FPM News & Updates
-logo: https://res.cloudinary.com/dphj6havg/image/upload/v1638860433/Group_552_uanei2.svg
