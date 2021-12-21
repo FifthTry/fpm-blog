@@ -1,19 +1,6 @@
 -- import: fifthtry/blog-theme as lib
 -- import: config
 
--- lib.toc list toc:
-
--- toc: Home
-link: /
-
--- toc: Support
-link: /
-
--- toc: Contact Us
-link: /
-
--- toc: Github
-link: /
 
 
 -- lib.blog-page:
