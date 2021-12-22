@@ -1,22 +1,13 @@
 -- import: fifthtry/blog-theme as lib
 -- import: config
 
--- lib.toc list toc:
-
--- toc: Home
-link: /
-
--- toc: Support
-link: /
-
--- toc: Contact Us
-link: /
-
--- toc: Github
-link: /
 
 
 -- lib.blog-page:
+
+--- lib.cover-section:
+src: https://res.cloudinary.com/dphj6havg/image/upload/v1638648047/Rectangle_663_raj9bt.png
+
 
 --- lib.h1: How to install FPM?
 
