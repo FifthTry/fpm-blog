@@ -1,6 +1,3 @@
--- import: fifthtry/blog-theme as lib
--- import: config
-
 
 -- lib.index-page:
 

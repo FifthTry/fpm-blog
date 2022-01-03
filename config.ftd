@@ -1,4 +1,4 @@
--- import: fifthtry/blog-theme as lib
+-- import: fifthtry.github.io/blog-theme as lib
 
 -- lib.site-name: Sourabh's blog
 -- lib.site-logo:  https://res.cloudinary.com/dphj6havg/image/upload/v1638644344/Group_551_gqhmnl.svg
