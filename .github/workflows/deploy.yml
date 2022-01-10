@@ -36,7 +36,8 @@ jobs:
         uses: actions/checkout@v2
       - name: Check if `build` branch exists
         id: branch_exists
-        run: $(/usr/bin/git ls-remote --heads origin build)
+        continue-on-error: true
+        run: /usr/bin/git ls-remote --heads origin build
       - name: Create branch if not exists
         id: create_branch
         if: steps.branch_exists.outcome != 'success'
