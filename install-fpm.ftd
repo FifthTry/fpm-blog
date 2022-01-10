@@ -6,7 +6,7 @@ src: https://res.cloudinary.com/dphj6havg/image/upload/v1638648047/Rectangle_663
 
 --- lib.h1: How to install FPM?
 
-fpm is available as a crate, you can install it using:
+`fpm` is available as a crate, you can install it using:
 
 --- lib.code:
 lang: ftd
