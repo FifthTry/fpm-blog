@@ -33,11 +33,10 @@ jobs:
     steps:
       - name: Prepare `build` branch creation
         id: clone_main
-        if: steps.branch_exists.outcome != 'success'
         uses: actions/checkout@v2
       - name: Check if `build` branch exists
         id: branch_exists
-        run: $(git ls-remote --heads origin build)
+        run: $(/usr/bin/git ls-remote --heads origin build)
       - name: Create branch if not exists
         id: create_branch
         if: steps.branch_exists.outcome != 'success'
