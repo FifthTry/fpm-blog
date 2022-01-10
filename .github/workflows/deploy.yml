@@ -18,10 +18,7 @@ jobs:
       - name: Install fpm
         id: install_fpm
         continue-on-error: false
-        uses: actions-rs/cargo@v1
-        with:
-          command: install
-          args: --git 'https://github.com/fifthtry/fpm.git'
+        run: sh -c "$(curl -fsSL https://raw.githubusercontent.com/FifthTry/fpm/main/install-fpm.sh)"
       - name: Build the pages with fpm
         id: build
         continue-on-error: false
